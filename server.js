@@ -23,7 +23,7 @@ const server = new ApolloServer({ typeDefs, resolvers });
 const app = express();
 
 const allowedOrigins = [
-    'https://101435500-comp3133-assignment2-sb6g.vercel.app'
+    'https://101435500-comp3133-assignment2-sb6g-nla6g2sst.vercel.app'
    
   ];
 
