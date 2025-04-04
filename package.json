@@ -1,0 +1,36 @@
+{
+  "name": "101435500_comp3133_assignment1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mongoose",
+    "Apollo",
+    "graphql",
+    "mongodb",
+    "express",
+    "API"
+  ],
+  "author": "Will Steep",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "apollo-server-express": "^2.19.2",
+    "bcryptjs": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+  "node": ">=18.0.0"
+}
+
+}
