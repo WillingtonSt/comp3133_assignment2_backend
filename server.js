@@ -22,11 +22,22 @@ const connectDB = async () => {
 const server = new ApolloServer({ typeDefs, resolvers });
 const app = express();
 
+const allowedOrigins = [
+    'https://101435500-comp3133-assignment2-sb6g.vercel.app'
+   
+  ];
 
-app.use(cors({
-    origin: process.env.CLIENT_ORIGIN || "*"
+
+  app.use(cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true
   }));
-  
 
 app.use(express.json({ limit: '10mb' }));
 
